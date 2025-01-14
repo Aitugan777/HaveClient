@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HaveApp.Extensions"
+             x:Class="HaveApp.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:UriToImageSourceConverter x:Key="UriToImageSourceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid RowDefinitions="50, *" Background="#2d2d2d">
+        <Border Grid.Row="0" BackgroundColor="#2d2d2d" StrokeThickness="0">
+            <Grid ColumnDefinitions="*, *">
+                <Label Grid.Column="0" Text="HAVE" FontSize="17" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" Margin="10, 0"/>
+                <ImageButton Grid.Column="1" HorizontalOptions="End" Source="filter.png" Margin="12"/>
+                <BoxView Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End"/>
+            </Grid>
+        </Border>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding ProductPairs}"  SelectionMode="None" BackgroundColor="#2d2d2d" Margin="10">
+            <CollectionView.Header>
+                <Border Margin="10, 10" Background="#2d2d2d">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="25" />
+                    </Border.StrokeShape>
+                    <SearchBar CancelButtonColor="White" TextColor="White" Placeholder="Артикул или название товара..." 
+                               PlaceholderColor="White" 
+                               Text="{Binding SearchQuery}" 
+                               SearchCommand="{Binding SearchCommand}" />
+                </Border>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*, *">
+                        <!-- Первая колонка -->
+                        <ContentView BindingContext="{Binding Column1}" IsVisible="{Binding Column1}">
+                            <Border StrokeThickness="0" Margin="10" Background="Transparent">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="150"/>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Border>
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20" />
+                                        </Border.StrokeShape>
+                                        <Grid RowDefinitions="30, *">
+                                            <ImageButton Grid.RowSpan="2" Aspect="AspectFill" Grid.Row="0" Source="{Binding ImageSource}" Command="{Binding OnImageClickCommand}" CommandParameter="{Binding}" />
+                                            <ImageButton Source="favorite.png" HorizontalOptions="End" Margin="0, 5, 0, 0" />
+                                        </Grid>
+                                    </Border>
+                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="Yellow" FontSize="13" Margin="20, 10, 0, 0" />
+                                    <Label Grid.Row="2" Text="{Binding Cost}" TextColor="Gold" HorizontalOptions="Start" Margin="20, 10, 0, 0" />
+                                    <Grid Grid.Row="3" ColumnDefinitions="*, *" RowDefinitions="25" VerticalOptions="Center">
+                                        <Label Text="{Binding Distance}" TextColor="White" VerticalOptions="End" Margin="20, 0, 0, 0" />
+                                        <ImageButton Grid.Column="2" Source="location.png" />
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </ContentView>
+
+                        <!-- Вторая колонка -->
+                        <ContentView Grid.Column="1" BindingContext="{Binding Column2}" IsVisible="{Binding Column2}">
+                            <Border StrokeThickness="0" Margin="10" Background="Transparent">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="150"/>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Border>
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20" />
+                                        </Border.StrokeShape>
+                                        <Grid RowDefinitions="30, *">
+                                            <ImageButton Grid.RowSpan="2" Aspect="AspectFill" Grid.Row="0" Source="{Binding ImageSource}" Command="{Binding OnImageClickCommand}" CommandParameter="{Binding}" />
+                                            <ImageButton Source="favorite.png" HorizontalOptions="End" Margin="0, 5, 0, 0" />
+                                        </Grid> 
+                                    </Border>
+                                    <Label Grid.Row="1" Text="{Binding Name}" TextColor="Yellow" FontSize="13" Margin="20, 10, 0, 0" />
+                                    <Label Grid.Row="2" Text="{Binding Cost}" TextColor="Gold" HorizontalOptions="Start" Margin="20, 10, 0, 0" />
+                                    <Grid Grid.Row="3" ColumnDefinitions="*, *" RowDefinitions="25" VerticalOptions="Center">
+                                        <Label Text="{Binding Distance}" TextColor="White" VerticalOptions="End" Margin="20, 0, 0, 0" />
+                                        <ImageButton Grid.Column="2" Source="location.png" />
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                        </ContentView>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
