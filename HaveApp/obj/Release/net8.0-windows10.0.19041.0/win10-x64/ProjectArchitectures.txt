@@ -1,1 +1,1 @@
-C:\Users\Aituk\Desktop\C#\Programs\HaveApp\HaveApp.csproj;x64
+C:\Users\Aituk\Desktop\C#\HClient\HaveApp\HaveApp.csproj;x64

@@ -6,7 +6,7 @@
     <Grid RowDefinitions="50, *" Background="#2d2d2d">
         <Border Grid.Row="0" BackgroundColor="#2d2d2d" StrokeThickness="0">
             <Grid ColumnDefinitions="*, *">
-                <ImageButton Grid.Column="0" HorizontalOptions="Start" Source="back.png" Margin="12"/>
+                <ImageButton Grid.Column="0" HorizontalOptions="Start" Source="back.png" Margin="12" Clicked="BtnClickBack"/>
                 <Label Grid.Column="1" Text="HAVE" FontSize="17" TextColor="White" HorizontalOptions="End" VerticalOptions="Center" Margin="10, 0"/>
                 <BoxView Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End"/>
             </Grid>
@@ -25,14 +25,13 @@
             </CarouselView>
             <IndicatorView x:Name="indicatorView" IndicatorColor="Gray" IndicatorSize="8" SelectedIndicatorColor="White" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 25"/>
 
-            <Label Text="Двигатель 3UZ FE" TextColor="Yellow" FontSize="20"  Margin="10, 0" />
+            <Label Text="{Binding Product.Name}" TextColor="Yellow" FontSize="20"  Margin="10, 0" />
             <Border StrokeThickness="0" Background="DarkCyan" Margin="0, 20">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="25, 25, 0, 0" />
                 </Border.StrokeShape>
                 <StackLayout>
-                    <Label Text="Описание" TextColor="White" Margin="20, 20" />
-                    <Label Text="450 лс" TextColor="White" Margin="20, 20" />
+                    <Label Text="{Binding Product.Description}" TextColor="White" Margin="20, 20" />
                 </StackLayout>
             </Border>
         </VerticalStackLayout>

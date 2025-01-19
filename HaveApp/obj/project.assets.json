@@ -37027,11 +37027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aituk\\Desktop\\C#\\Programs\\HaveApp\\HaveApp.csproj",
+      "projectUniqueName": "C:\\Users\\Aituk\\Desktop\\C#\\HClient\\HaveApp\\HaveApp.csproj",
       "projectName": "HaveApp",
-      "projectPath": "C:\\Users\\Aituk\\Desktop\\C#\\Programs\\HaveApp\\HaveApp.csproj",
+      "projectPath": "C:\\Users\\Aituk\\Desktop\\C#\\HClient\\HaveApp\\HaveApp.csproj",
       "packagesPath": "C:\\Users\\Aituk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aituk\\Desktop\\C#\\Programs\\HaveApp\\obj\\",
+      "outputPath": "C:\\Users\\Aituk\\Desktop\\C#\\HClient\\HaveApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

@@ -81,9 +81,9 @@ namespace HaveApp.ViewModels
                 ProductPairs.Clear();
                 foreach (HProduct product in products)
                 {
-                    product.OnImageClickCommand = new Command(() =>
+                    product.OnImageClickCommand = new Command(async () =>
                     {
-                        OnProductClicked(product);
+                        await OnProductClicked(product);
                     });
                 }
                 ProductPairs = new ObservableCollection<HProductPair>(CreatePairs(products));
@@ -95,9 +95,9 @@ namespace HaveApp.ViewModels
             }
         }
 
-        private void OnProductClicked(HProduct product)
+        private async Task OnProductClicked(HProduct product)
         {
-            Application.Current.MainPage.DisplayAlert("Товар выбран", $"Вы выбрали: {product.Name}", "ОК");
+            await Application.Current.MainPage.Navigation.PushAsync(new ItemInfoPage(product));
         }
 
         private List<HProductPair> CreatePairs(List<HProduct> products)

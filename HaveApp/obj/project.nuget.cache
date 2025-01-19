@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdpMvKGHf048y/pZtxH+85yclxiCyn3KJeBtjPLTHHYBkJGf0mkuvwxELgrulYLkQWa9R3mmlasuboDPhJApyQ==",
+  "dgSpecHash": "MbuBPsh9pfqw894G4MTZnuuT8wq70awt39ph2LJ5Crw4/TakXJNmuTCx5ZzEQyg9sYU+VgG5yTKXiq8845JBRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aituk\\Desktop\\C#\\Programs\\HaveApp\\HaveApp.csproj",
+  "projectFilePath": "C:\\Users\\Aituk\\Desktop\\C#\\HClient\\HaveApp\\HaveApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aituk\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Aituk\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

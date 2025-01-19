@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HaveApp
-build_property.ProjectDir = C:\Users\Aituk\Desktop\C#\Programs\HaveApp\
+build_property.ProjectDir = C:\Users\Aituk\Desktop\C#\HClient\HaveApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/App.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/AppShell.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/ItemInfoPage.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/ItemInfoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.ItemInfoPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ItemInfoPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ItemInfoPage.xaml
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/MainPage.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/Resources/Styles/Colors.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Aituk/Desktop/C\#/Programs/HaveApp/Resources/Styles/Styles.xaml]
+[C:/Users/Aituk/Desktop/C\#/HClient/HaveApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HaveApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

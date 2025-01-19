@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HaveApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e2cd6f5bb6beb2c6a1c2ff252c4d4c46b7962c79")]
 [assembly: System.Reflection.AssemblyProductAttribute("HaveApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HaveApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

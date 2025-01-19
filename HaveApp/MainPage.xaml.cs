@@ -11,5 +11,11 @@ namespace HaveApp
 
             BindingContext = new MainViewModel();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
     }
 }
